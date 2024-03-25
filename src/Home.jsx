@@ -299,7 +299,51 @@ const Home = () => {
       
 
       </motion.div>
-      <div className='footer'></div>
+      <div className='footer'>
+        <div className='sub4'></div>
+        <div className='sub4'>
+         <p className="quick">Quick Links</p>
+          <ul className='social'>
+            
+            <li className='sites'>
+              <a href='https://www.instagram.com/mediaterofficial/' target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
+            <li className='sites'>
+              <a href='https://www.linkedin.com/company/mediater-in/about/?viewAsMember=true' target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </li>
+            <li className='sites'>
+              <a href='https://medium.com/@mediaterofficial' target="_blank" rel="noopener noreferrer">
+                Blogs
+              </a>
+            </li>
+            <li className='sites'>
+              <a href='https://twitter.com/mediater_' target="_blank" rel="noopener noreferrer">
+                Twitter
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className='sub4'>
+        <p className="quick">Contact Us</p>
+          <ul className='social'>
+            
+            <li className='sites'>
+                Ph:+91 7994076261
+            </li>
+            <li className='sites'> 
+              Email: official@mediater.in
+            </li>
+            <li className='sites'>
+              Address: Karicode, Kollam
+            </li>
+            </ul>
+        </div>
+        <div className='sub4'></div>
+      </div>
     </div>
   );
 };

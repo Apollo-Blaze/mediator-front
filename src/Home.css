@@ -134,14 +134,7 @@ p{
     width: 100%;
     border-radius: 10px;
 }
-.sub4{
-    position: relative;
-    background-color: rgb(200, 0, 255);
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    margin:2px;
-}
+
 .sub5{
     position: relative;
     background-color: rgb(68, 38, 160);
@@ -411,3 +404,58 @@ button{
     font-family: Domine;
     
   }
+  .footer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .sub4 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    margin: 2px;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    color: white;
+    padding-left: 15px;
+    flex-basis: 25%; /* Set the initial width of each column */
+    min-width: 100px; /* Minimum width of each column */
+  }
+  
+  .quick {
+    position: relative;
+    font-size: 2em;
+  }
+  
+  .social {
+    position: relative;
+    list-style: none;
+    color: white;
+    text-align: left;
+    background-color: rgb(0, 0, 0);
+    margin-top: 1.3vh;
+  }
+  
+  .sites {
+    color: white;
+    list-style: none;
+    margin-top: 1rem;
+    transition: all 0.3s; /* Remove default list styles */
+  }
+  
+  .sites a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the color of the parent element */
+    cursor: pointer; /* Show cursor as pointer on hover */
+  }
+  
+  .sites a:hover {
+    text-decoration: underline; /* Underline on hover */
+    text-underline-offset: 0.5rem; /* Set the distance of the underline from the text */
+    text-decoration-thickness: 0.5px; /* Set the thickness of the underline */
+  }
+  
