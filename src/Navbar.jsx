@@ -3,19 +3,20 @@ import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
 
+
 function Navbar() {
     const [menu, setMenu] = useState(false);
-
+    let _1vh=Math.round(window.innerHeight / 100)
     const scrollToAbout = () => {
-        scroll.scrollTo(2050); // Adjust the value as needed to scroll to the correct position
+        scroll.scrollTo(315* _1vh); // Adjust the value as needed to scroll to the correct position
         setMenu(false); // Close the menu after scrolling
     };
     const scrollToContact = () => {
-      scroll.scrollTo(1400); // Adjust the value as needed to scroll to the correct position
+      scroll.scrollTo(210* _1vh); // Adjust the value as needed to scroll to the correct position
       setMenu(false); // Close the menu after scrolling
   };
   const scrollToHero = () => {
-    scroll.scrollTo(700); // Adjust the value as needed to scroll to the correct position
+    scroll.scrollTo(105* _1vh); // Adjust the value as needed to scroll to the correct position
     setMenu(false); // Close the menu after scrolling
 };
 const scrollToTop = () => {
