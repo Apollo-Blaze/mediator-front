@@ -209,7 +209,7 @@ const Home = () => {
   }}
 >
   <div class="first-content" >
-    <span className="im" style={{display: "inline-block",backgroundImage:`url(${vissual})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
+    <span className="im" style={{display: "inline-block",backgroundImage:`url(${visual})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
     <span className='rn'>- visualvoyager__
 
 ⭐⭐⭐⭐⭐</span>
