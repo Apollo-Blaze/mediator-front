@@ -8,7 +8,6 @@ import {
   MotionValue
 } from "framer-motion";
 import { useState,useRef , useEffect} from 'react'
-import { duration } from '@mui/material'
 import './card.css'
 
 function useParallax(ref, distance) {
