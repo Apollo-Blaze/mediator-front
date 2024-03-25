@@ -9,6 +9,12 @@ import {
 } from "framer-motion";
 import { useState,useRef , useEffect} from 'react'
 import './card.css'
+import cov from './assets/cov.mp4'
+import connect from './assets/connect.jpg'
+import office from './assets/office.jpg'
+import priyag from './assets/priyag.jpg'
+import visual from './assets/visual.jpg'
+
 
 function useParallax(ref, distance) {
   const { scrollYProgress } = useScroll({ target: ref });
@@ -94,14 +100,14 @@ const Home = () => {
   return (
     <div>
       <motion.div className="hero" >
-      <motion.video
-      ref={videoRef}
-        src="src/assets/cov.mp4"
-        autoPlay
-        loop
-        muted
-        style={{width: "100%", height: "100%", objectFit: "cover"}}
-    />
+          <motion.video
+            ref={videoRef}
+            src={cov}
+            autoPlay
+            loop
+            muted
+            style={{width: "100%", height: "100%", objectFit: "cover"}}
+      />
     <div className="text-overlay" style={{position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)"}}>
         <motion.h1
         ref={ref4}
@@ -154,7 +160,7 @@ const Home = () => {
       
       </motion.div>
       
-      <motion.div className='hero3' style={{backgroundImage: "url('src/assets/office.jpg')", backgroundSize: "cover" }}>
+      <motion.div className='hero3' style={{backgroundImage: `url(${office})`, backgroundSize: "cover" }}>
       <div className="review-t"> Our customers love us! Read what they have to say about their experiences using our platform.</div>
       <motion.div class="card"
         whileInView={{
@@ -175,7 +181,7 @@ const Home = () => {
         }}
       >
   <div class="first-content" >
-    <span className="im" style={{display: "inline-block",backgroundImage:"url('src/assets/priyag.jpg')",height:"230px",width:"230px", backgroundSize:"cover"}}></span>
+    <span className="im" style={{display: "inline-block",backgroundImage:`url(${priyag})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
     <span className='rn'>- Prayag_gift_
 
 ⭐⭐⭐⭐⭐</span>
@@ -203,7 +209,7 @@ const Home = () => {
   }}
 >
   <div class="first-content" >
-    <span className="im" style={{display: "inline-block",backgroundImage:"url('src/assets/visual.jpg')",height:"230px",width:"230px", backgroundSize:"cover"}}></span>
+    <span className="im" style={{display: "inline-block",backgroundImage:`url(${vissual})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
     <span className='rn'>- visualvoyager__
 
 ⭐⭐⭐⭐⭐</span>
@@ -213,7 +219,7 @@ const Home = () => {
   </div>
 </motion.div>
       </motion.div>
-      <motion.div className="hero2" style={{backgroundImage: "url('src/assets/connect.jpg')", backgroundSize: "cover"} } >
+      <motion.div className="hero2" style={{backgroundImage: `url(${connect})`, backgroundSize: "cover"} } >
         <motion.div className="sub1" ref={ref1}
           style={{
             x:parallax1.x,
