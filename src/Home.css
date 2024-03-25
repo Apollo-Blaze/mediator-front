@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+/* Add the font styles */
+.domine {
+  font-family: 'Domine', serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* You can adjust the weight as needed */
+  font-style: normal;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+body {
+    font-size: 1rem; /* 16px */
+}
+
+/* Define font sizes for different viewport widths */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 0.875rem; /* 14px for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 0.75rem; /* 12px for even smaller screens */
+    }
+}
+.hero{
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+h1{
+    position: relative;
+    left: 0px;
+    margin-bottom: 40px;
+    font-size:4.83vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
+    text-align: center;
+}
+p{
+    position: relative;
+    left: -30px;
+    margin: 20px;
+    text-align: center;
+    font-weight: 400;
+    
+    font-size:1.9vw;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero2{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(58, 109, 156);
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.hero3{
+  display:flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(58, 109, 156);
+  justify-content: center;
+  padding: 10%;
+
+}
+.sub1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.003);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    margin:2px;
+    padding: 0;
+    left: 0px;
+}
+.sub2{
+    position: relative;
+    background-color: rgb(0, 255, 21);
+    height: 100%;
+    width: 100%;
+    display:flex;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.sub3{
+    position: relative;
+    background-color: rgb(255, 0, 191);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.sub4{
+    position: relative;
+    background-color: rgb(200, 0, 255);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin:2px;
+}
+.sub5{
+    position: relative;
+    background-color: rgb(68, 38, 160);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    margin:2px;
+}
+.sub6{
+    position: relative;
+    background-color: rgb(0, 102, 255);
+    height:60%;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    left: 0px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    border: 2px white;
+    
+}
+.sub7{
+    position: relative;
+    background-color: rgb(255, 0, 136);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    margin: 10px;
+}
+.parent{
+    position: abs;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(198, 0, 0);
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    height:1.4rem;
+    width: 2rem;
+    margin: 50px;
+}
+
+.form {
+    position: relative;
+    left: -25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width:155%;
+    background-color: #ffffff44;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    
+  }
+  
+  .message {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    color: rgb(213, 34, 34);
+    font-size: 0.8em;
+    font-weight:500;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: rgb(62, 62, 62);
+  }
+  
+  .input01 {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 5px;
+  }
+  
+  .form label .input01 + span {
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input01:placeholder-shown + span {
+    top: 40px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input01:focus ,.form label .input01:valid + span {
+    top: 50px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input01:valid + span {
+    color: rgb(87, 87, 87);
+  }
+  
+  .fancy {
+    background-color: transparent;
+    border: 2px solid #cacaca;
+    border-radius: 0px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 390;
+    letter-spacing: 2px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 8px 30px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    width:100%;
+    height: auto;
+  }
+  
+  .fancy::before {
+    content: " ";
+    width: 1.7rem;
+    height: 2px;
+    background: #cacaca;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(230%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+  
+  .fancy .text {
+    position: relative;
+    left: 10%;
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #ffffff;
+    transform: translateX(30%);
+  }
+  
+  .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+  
+  .fancy:hover {
+    color: white;
+    background: #cacaca;
+  }
+  
+  .fancy:hover::before {
+    width: 1.5rem;
+    background: white;
+  }
+  
+  .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+  }
+  
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+  
+  .fancy:hover .bottom-key-1,
+   .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
+  .review-t{
+
+    text-align: center;
+    align-content: center;
+    font-size: 2vw;
+    font-weight: 600;
+    margin-right: 30px;
+    font-family: Domine;
+    
+  }
