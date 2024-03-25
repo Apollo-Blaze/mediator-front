@@ -50,6 +50,7 @@ body {
 }
 h1{
     position: relative;
+    margin-top: 10vh;
     left: 0px;
     margin-bottom: 40px;
     font-size:4.83vw;
