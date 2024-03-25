@@ -14,6 +14,7 @@ import connect from './assets/connect.jpg'
 import office from './assets/office.jpg'
 import priyag from './assets/priyag.jpg'
 import visual from './assets/visual.jpg'
+import m from './assets/M.png'
 
 
 function useParallax(ref, distance) {
@@ -300,7 +301,10 @@ const Home = () => {
 
       </motion.div>
       <div className='footer'>
-        <div className='sub4'></div>
+        <div className='sub5' style={{height:"100%"}}>
+      <span className="logo" style={{backgroundImage: `url(${m})`, backgroundSize: "contain" ,backgroundRepeat: "no-repeat", // Prevent the image from repeating
+    backgroundPosition: "center"  }}></span>
+    </div>
         <div className='sub4'>
          <p className="quick">Quick Links</p>
           <ul className='social'>
@@ -342,7 +346,6 @@ const Home = () => {
             </li>
             </ul>
         </div>
-        <div className='sub4'></div>
       </div>
     </div>
   );

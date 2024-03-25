@@ -137,7 +137,6 @@ p{
 
 .sub5{
     position: relative;
-    background-color: rgb(68, 38, 160);
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -412,9 +411,10 @@ button{
   
   .sub4 {
     position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
     border-radius: 10px;
     margin: 2px;
     text-align: start;
@@ -433,11 +433,11 @@ button{
   
   .social {
     position: relative;
+    top:-2vh;
     list-style: none;
     color: white;
     text-align: left;
-    background-color: rgb(0, 0, 0);
-    margin-top: 1.3vh;
+    margin-top: 1.2vh;
   }
   
   .sites {
@@ -458,4 +458,25 @@ button{
     text-underline-offset: 0.5rem; /* Set the distance of the underline from the text */
     text-decoration-thickness: 0.5px; /* Set the thickness of the underline */
   }
-  
+  .sub5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 2px;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 15px;
+    flex-basis: 25%; /* Set the initial width of each column */
+    min-width: 100px; /* Minimum width of each column */
+  }
+  .logo{
+    position: relative;
+    height:50%;
+    width: 50%;
+  }
+  body{
+    background-color: black;
+  }
