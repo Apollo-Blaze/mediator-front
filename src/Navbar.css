@@ -27,6 +27,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(33, 33, 33);
+    height: 7.5vh;
     position: sticky;
     top:0;
     z-index: 1000;
@@ -50,13 +51,14 @@ nav ul li a{
     text-decoration: none;
     color:white;
     padding: 0.5rem;
-    padding-bottom: 1.3rem;
+    padding-bottom: 1.2rem;
     margin: 0.8rem;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav ul li a:not(.active):hover{
-    transform: scale(1.1,1.1);
+    
+    border-bottom: 3px solid white;
     transition: 0.2s ease-out;
 }
 nav .menu{
