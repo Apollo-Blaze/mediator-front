@@ -84,16 +84,37 @@ p{
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.hero2{
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    background-color: rgb(58, 109, 156);
-    justify-content: center;
-    padding: 50px;
-
+.hero2 {
+  position: relative; /* Make sure the container is positioned */
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  padding: 50px;
+  z-index: 0;
+  background-image: url(${connect});
+  background-size: cover;
 }
+
+.hero2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(29, 17, 99, 0.293), rgba(8, 10, 29, 0.697)), rgba(7, 7, 7, 0.244);
+  z-index: 1; /* Ensure the gradient layer is behind the content */
+}
+
+.hero2-content {
+  position: relative; /* Ensure content is on top of the gradient */
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
 
 .hero3{
   display:flex;
@@ -103,8 +124,8 @@ p{
   background-color: rgb(58, 109, 156);
   justify-content: center;
   padding: 10%;
-
 }
+
 .hero4{
   display:flex;
   flex-direction: row;
@@ -113,8 +134,8 @@ p{
   background-color: rgb(191, 191, 191);
   justify-content: end;
   align-items: center;
-
 }
+
 .sub7{
   position: relative;
   background-color: rgb(0, 102, 255);
@@ -124,8 +145,8 @@ p{
   text-align:center;
   display: flex;
   align-items: center;
-  
 }
+
 .sub8{
   position: relative;
   height:100%;
@@ -134,13 +155,12 @@ p{
   text-align:center;
   display: flex;
   align-items: center;
-  
 }
+
 .sub1{
     position: relative;
     display: flex;
     flex-direction: column;
-
     height: 100%;
     width: 100%;
     border-radius: 10px;
@@ -148,16 +168,37 @@ p{
     padding: 0;
     left: 0px;
 }
+
 .sub2{
     position: relative;
-    background-color: rgb(0, 255, 21);
     height: 100%;
     width: 100%;
     display:flex;
     border-radius: 10px;
     flex-direction: column;
     margin-bottom: 4px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    margin-left: 10vw;
 }
+
+h3{
+  position: relative;
+  top: -5%;
+  font-size: 3vw;
+  color: white;
+  margin-bottom: 5vh;
+
+}
+p3{
+  font-size: 1.5vw;
+  position: relative;
+  top:-5%;
+  color: white;
+}
+
 .sub3{
     position: relative;
     background-color: rgb(255, 0, 191);
@@ -173,6 +214,7 @@ p{
     border-radius: 10px;
     margin:2px;
 }
+
 .sub6{
     position: relative;
     background-color: rgb(0, 102, 255);
@@ -185,9 +227,9 @@ p{
     text-align:center;
     display: flex;
     align-items: center;
-    border: 2px white;
-    
+    border: 2px white; 
 }
+
 .sub9{
   position: relative;
   height:100%;
@@ -203,6 +245,7 @@ p{
   border: 2px white;
   padding: 20px;
 }
+
 .sub10{
   position: relative;
   background-color: rgb(151, 176, 213);
@@ -215,7 +258,6 @@ p{
   display: flex;
   align-items: center;
   border: 2px white;
-  
 }
 
 .parent{
@@ -245,7 +287,7 @@ button{
     flex-direction: column;
     gap: 10px;
     height: 60%;
-    width:50%;
+    width:100%;
     justify-content: center;
     background-color: #ffffff44;
     padding: 20px;

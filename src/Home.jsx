@@ -193,6 +193,7 @@ const Home = () => {
 </motion.div>
       </motion.div>
       <motion.div className="hero2" style={{backgroundImage: `url(${connect})`, backgroundSize: "cover"} } >
+        <div className='hero2-content'>
         <motion.div className="sub1" 
         >
           <motion.form className="form"
@@ -248,6 +249,12 @@ const Home = () => {
     </button>
 </motion.form>
         </motion.div>
+        <motion.div className="sub2" 
+        >
+          <h3>Get in touch!</h3>
+          <p3>Drop us a message using the form, and we'll get back to you shortly.</p3>
+        </motion.div>
+        </div>
       </motion.div>
       <motion.div className='hero4'>
       <motion.div className="sub8" ref={ref2}
