@@ -336,7 +336,7 @@ button{
     content: " ";
     width: 1.7rem;
     height: 2px;
-    background: #cacaca;
+    background: #cacaca00;
     top: 50%;
     left: 1.5em;
     position: absolute;
