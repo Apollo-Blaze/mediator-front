@@ -286,7 +286,7 @@ button{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 60%;
+    height: 65%;
     width:100%;
     justify-content: center;
     background-color: #ffffff44;
