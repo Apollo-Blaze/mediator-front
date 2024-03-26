@@ -14,6 +14,7 @@ import connect from './assets/connect.jpg'
 import office from './assets/office.jpg'
 import priyag from './assets/priyag.jpg'
 import visual from './assets/visual.jpg'
+import hall from './assets/hall.jpg'
 import m from './assets/M.png'
 
 
@@ -276,8 +277,8 @@ const Home = () => {
 </form>
         </motion.div>
       </motion.div>
-      <motion.div className='hero3'>
-      <motion.div className="sub6" ref={ref2}
+      <motion.div className='hero4'>
+      <motion.div className="sub8" ref={ref2}
           style={{
             x:parallax2.x,
             opacity:parallax2.opacity
@@ -297,7 +298,7 @@ const Home = () => {
         >
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </motion.div>
-      
+          <motion.div className="sub7" style={{backgroundImage: `url(${hall})`, backgroundSize: "cover"}}></motion.div>
 
       </motion.div>
       <div className='footer'>
