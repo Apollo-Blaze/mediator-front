@@ -16,6 +16,7 @@ import priyag from './assets/priyag.jpg'
 import visual from './assets/visual.jpg'
 import hall from './assets/hall.jpg'
 import m from './assets/M.png'
+import vis from './vis';
 
 
 function useParallax(ref, distance) {
@@ -165,22 +166,7 @@ const Home = () => {
       <motion.div className='hero3' style={{backgroundImage: `url(${office})`, backgroundSize: "cover" }}>
       <div className="review-t"> Our customers love us! Read what they have to say about their experiences using our platform.</div>
       <motion.div class="card"
-        whileInView={{
-          x:100,
-          opacity:1
-        }}
-        initial={
-          {
-            x:0,
-            opacity:0
-          }
-        }
-        whileHover={{
-          scale:1.2
-        }}
-        transition={{
-          duration:0.1
-        }}
+        
       >
   <div class="first-content" >
     <span className="im" style={{display: "inline-block",backgroundImage:`url(${priyag})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
@@ -193,22 +179,7 @@ const Home = () => {
   </div>
 </motion.div>
 <motion.div class="card"
-  whileInView={{
-    x:100,
-    opacity:1
-  }}
-  initial={
-    {
-      x:-100,
-      opacity:0
-    }
-  }
-  whileHover={{
-    scale:1.2
-  }}
-  transition={{
-    duration:0.1
-  }}
+  
 >
   <div class="first-content" >
     <span className="im" style={{display: "inline-block",backgroundImage:`url(${visual})`,height:"230px",width:"230px", backgroundSize:"cover"}}></span>
@@ -279,14 +250,6 @@ const Home = () => {
       </motion.div>
       <motion.div className='hero4'>
       <motion.div className="sub8" ref={ref2}
-          style={{
-            x:parallax2.x,
-            opacity:parallax2.opacity
-          }}
-          initial={{
-            opacity: 0,
-            x: -50
-          }}
           transition={{
             duration: 1,
             type: "just"
@@ -296,7 +259,18 @@ const Home = () => {
             opacity: [0, 0.6, 1]
           }}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          <motion.div className='sub9'>
+          <div class="card1">
+            <h2>Vision</h2>
+            <p2>Envisioning a future where the boundaries between content creators and businesses dissolve, our app aspires to be the unparalleled hub for dynamic collaboration in the digital realm. We see a landscape where creativity knows no limits, and partnerships transcend traditional boundaries, resulting in a global network of thriving content ecosystems. By pioneering innovation, fostering inclusivity, and driving transformative connections, our vision is to shape the future of online collaboration, where every creator's voice is amplified, and every business finds its ideal collaborator effortlessly.
+
+</p2>
+          </div>
+          <div class="card1">
+            <h2>Mission</h2>
+            <p2>Empowering collaboration and innovation, our mission is to seamlessly connect content creators with businesses, fostering meaningful partnerships in the digital landscape. By providing a dynamic platform that facilitates efficient communication, secure transactions, and insightful analytics, we aim to be the catalyst for creativity, growth, and success in the online content creation ecosystem. Our commitment lies in building a vibrant community where creators thrive, businesses prosper, and authentic collaborations flourish.</p2>
+          </div>
+          </motion.div>
           </motion.div>
           <motion.div className="sub7" style={{backgroundImage: `url(${hall})`, backgroundSize: "cover"}}></motion.div>
 

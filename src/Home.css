@@ -110,7 +110,7 @@ p{
   flex-direction: row;
   height: 100vh;
   width: 100%;
-  background-color: rgb(198, 196, 186);
+  background-color: rgb(191, 191, 191);
   justify-content: end;
   align-items: center;
 
@@ -187,6 +187,35 @@ p{
     align-items: center;
     border: 2px white;
     
+}
+.sub9{
+  position: relative;
+  height:100%;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  left: 0px;
+  text-align:center;
+  display: flex;
+  flex-direction: column;
+  gap:5%;
+  align-items: center;
+  border: 2px white;
+  padding: 20px;
+}
+.sub10{
+  position: relative;
+  background-color: rgb(151, 176, 213);
+  height:80%;
+  width: 80%;
+  border-radius: 10px;
+  color: white;
+  left: 0px;
+  text-align:center;
+  display: flex;
+  align-items: center;
+  border: 2px white;
+  
 }
 
 .parent{
@@ -417,7 +446,7 @@ button{
     width: 0;
   }
   .review-t{
-
+    justify-content: center;
     text-align: center;
     align-content: center;
     font-size: 2vw;
