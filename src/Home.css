@@ -140,9 +140,9 @@ p{
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.003);
-    height: fit-content;
-    width: fit-content;
+
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
     margin:2px;
     padding: 0;
@@ -239,17 +239,19 @@ button{
 
 .form {
     position: relative;
-    left: -25%;
+    left:-10%;
+    top:20%;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100%;
-    width:155%;
+    height: 60%;
+    width:50%;
+    justify-content: center;
     background-color: #ffffff44;
     padding: 20px;
     border-radius: 10px;
     position: relative;
-    backdrop-filter: blur(10px); /* Add blur effect */
+
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
     
   }
@@ -353,7 +355,6 @@ button{
     position: relative;
     text-align: center;
     text-decoration: none;
-    text-transform: none;
     transition: all 0.3s ease-in-out;
     user-select: none;
     font-size: 13px;

@@ -193,25 +193,26 @@ const Home = () => {
 </motion.div>
       </motion.div>
       <motion.div className="hero2" style={{backgroundImage: `url(${connect})`, backgroundSize: "cover"} } >
-        <motion.div className="sub1" ref={ref1}
+        <motion.div className="sub1" 
+        >
+          <motion.form className="form"
+          ref={ref1}
+          initial={{
+            opacity:0,
+            x: -130
+          }}
+          animate={{
+            opacity:0
+          }}
           style={{
             x:parallax1.x,
             opacity:parallax1.opacity
           }}
-          initial={{
-            opacity: 1,
-            x: -50
-          }}
+          
           transition={{
             duration: 2,
             type: "spring"
-          }}
-          animate={{
-           // Use the calculated xValue here
-            opacity: [0, 0.6, 1]
-          }}
-        >
-          <form className="form">
+          }}>
     
     <div className="flex">
         <label>
@@ -245,7 +246,7 @@ const Home = () => {
       <span className="bottom-key-1"></span>
       <span className="bottom-key-2"></span>
     </button>
-</form>
+</motion.form>
         </motion.div>
       </motion.div>
       <motion.div className='hero4'>
