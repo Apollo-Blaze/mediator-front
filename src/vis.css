@@ -20,6 +20,8 @@
     color: black;
     font-size: 4vw;
     margin-bottom: 10px;
+    font-size: 4vw;
+    font-size: 7vh;
     font-family: Playfair Display;
    }
    p2{
@@ -27,7 +29,8 @@
     color: rgb(58, 58, 58);
     text-align: left;
     width:70%;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-size: 2.1vh;
    }
    .playfair-display-myuniqueclass {
     font-family: "Playfair Display", serif;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
+import navl from "./assets/nav.png"
 
 
 function Navbar() {
@@ -26,7 +27,7 @@ const scrollToTop = () => {
 
     return (
         <nav>
-            <Link to='' className='title'  onClick={scrollToTop}>Website</Link>
+            <Link to='/' className='title'  onClick={scrollToTop}  >Mediater</Link>
             <div className='menu' onClick={() => { setMenu(!menu) }}>
                 <span></span>
                 <span></span>
