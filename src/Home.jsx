@@ -65,7 +65,7 @@ function useInViewTransition(ref, distance) {
   const { scrollYProgress } = useScroll({ target: ref.current });
 
   const transition = {
-    opacity: useTransform(scrollYProgress, [0,0.3, 0.7, 1], [1,1, 0, 1]),
+    opacity: useTransform(scrollYProgress, [0,0.2, 0.6, 1], [1,0, 0, 1]),
     y: useTransform(scrollYProgress, [0, 1], [distance, 0])
   };
 
@@ -84,7 +84,7 @@ const Home = () => {
   const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref7 = useRef(null);
-  const visionTransition = useInViewTransition(ref7, 100);
+  const visionTransition = useInViewTransition(ref7, 400);
   const filter1 = useFilter(ref5, 100);
   const parallax1 = useParallaxf(ref1, 130);
   const parallax2 = useParallax(ref2, 50);
