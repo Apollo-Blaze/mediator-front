@@ -61,6 +61,17 @@ function useParallaxf(ref, distance) {
 
   return parallax;
 }
+function useInViewTransition(ref, distance) {
+  const { scrollYProgress } = useScroll({ target: ref.current });
+
+  const transition = {
+    opacity: useTransform(scrollYProgress, [0,0.3, 0.7, 1], [1,1, 0, 1]),
+    y: useTransform(scrollYProgress, [0, 1], [distance, 0])
+  };
+
+  return transition;
+}
+
 
 
 
@@ -72,6 +83,8 @@ const Home = () => {
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
+  const ref7 = useRef(null);
+  const visionTransition = useInViewTransition(ref7, 100);
   const filter1 = useFilter(ref5, 100);
   const parallax1 = useParallaxf(ref1, 130);
   const parallax2 = useParallax(ref2, 50);
@@ -256,7 +269,7 @@ const Home = () => {
         </motion.div>
         </div>
       </motion.div>
-      <motion.div className='hero4'>
+      <motion.div className='hero4' ref={ref7}>
       <motion.div className="sub8" ref={ref2}
           transition={{
             duration: 1,
@@ -267,17 +280,36 @@ const Home = () => {
             opacity: [0, 0.6, 1]
           }}
         >
-          <motion.div className='sub9'>
-          <div class="card1">
+          <motion.div className='sub9' >
+          <motion.div className="card1"
+
+            initial={{
+              opacity: 0,
+              y: 100
+            }}
+            style={{
+              opacity: visionTransition.opacity,
+              y: visionTransition.y
+            }}
+          >
             <h2>Vision</h2>
             <p2>Envisioning a future where the boundaries between content creators and businesses dissolve, our app aspires to be the unparalleled hub for dynamic collaboration in the digital realm. We see a landscape where creativity knows no limits, and partnerships transcend traditional boundaries, resulting in a global network of thriving content ecosystems. By pioneering innovation, fostering inclusivity, and driving transformative connections, our vision is to shape the future of online collaboration, where every creator's voice is amplified, and every business finds its ideal collaborator effortlessly.
 
 </p2>
-          </div>
-          <div class="card1">
+          </motion.div>
+          <motion.div className="card1"
+          initial={{
+            opacity: 0,
+            y: 100
+          }}
+          style={{
+            opacity: visionTransition.opacity,
+            y: visionTransition.y
+          }}
+          >
             <h2>Mission</h2>
             <p2>Empowering collaboration and innovation, our mission is to seamlessly connect content creators with businesses, fostering meaningful partnerships in the digital landscape. By providing a dynamic platform that facilitates efficient communication, secure transactions, and insightful analytics, we aim to be the catalyst for creativity, growth, and success in the online content creation ecosystem. Our commitment lies in building a vibrant community where creators thrive, businesses prosper, and authentic collaborations flourish.</p2>
-          </div>
+          </motion.div>
           </motion.div>
           </motion.div>
           <motion.div className="sub7" style={{backgroundImage: `url(${hall})`, backgroundSize: "cover"}}></motion.div>
