@@ -1,6 +1,6 @@
 # Mediator
 
-Mediator is a website designed to facilitate collaboration between content creators and businesses, creating a dynamic ecosystem for innovation and creativity.
+Mediator is a website designed to facilitate collaboration between content creators and businesses, creating a dynamic ecosystem for innovation and creativity. This is a site I made for the same company as part of my internship project.
 
 ## Features
 
