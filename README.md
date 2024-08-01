@@ -1,4 +1,4 @@
-# Mediator
+# Mediator - Front End
 
 Mediator is a website designed to facilitate collaboration between content creators and businesses, creating a dynamic ecosystem for innovation and creativity. This is a site I made for the same company as part of my internship project.
 https://mediator-front.vercel.app/  - This is the link to the deployed site
